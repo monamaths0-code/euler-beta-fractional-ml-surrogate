@@ -40,14 +40,6 @@ v((μ1+μ2)/2) · β(γ1, γ2; σ)
 6. Times classical quadrature against surrogate inference on the same
    machine, for the reported speed-up.
 
-## Note on the corrected kernel
-
-An earlier draft of the manuscript used an exponential kernel in the middle
-(MID) term that was written inconsistently with the kernel in the Beta
-function definition, which one reviewer traced to an apparent violation of
-the inequality in a worked numerical example. This repository implements the
-**corrected** kernel (the same `σ · (μ2-x)(x-μ1) / (μ2-μ1)²` structure used in
-both the Beta-kernel and the MID integral), matching the revised manuscript.
 
 ## Repository structure
 
@@ -90,8 +82,8 @@ under `./outputs`.
 ## Reproducibility
 
 All the numbers below come from an actual run of `main.py` in this
-repository (not placeholder values) and correspond to the numbers reported in
-the revised manuscript (Table 2, Table 3, Table 4, and Section 4 of the
+repository  and correspond to the numbers reported in
+the  manuscript (Table 2, Table 3, Table 4, and Section 4 of the
 paper):
 
 | Bound | MAE | RMSE | R² |
